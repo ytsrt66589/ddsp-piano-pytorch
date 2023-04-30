@@ -1,19 +1,23 @@
+## Introduction 
+
+This is the project of implementing DaFX20in22 paper: DDSP-Piano: Differentiable Piano model for MIDI-to-Audio Performance Synthesis by the Pytorch framework.
+
+### Official information 
+* Official implementation is by TensorFlow: [original implementation](https://github.com/lrenault/ddsp-piano) 
+* Official paper link: [paper link](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in22_paper_48.pdf) 
+
+### Future To-Do 
+- [?] Inference.py 
+- [?] Better data organization 
+- [?] Better code organization  
+
+
 ## Run 
 
 1. create ```data```, ```data_cache```, ```data_cache_val``` directory 
 2. download [maestro v3.0.0](https://magenta.tensorflow.org/datasets/maestro#v300) dataset
 3. put it in the ```data``` directory ( data/maestro-v3.0.0 )
 4. run ```bash full_training.sh``` -> start training 
-
-```
-Maybe 可以設定一下多久跑一次 validation XD, 不然會等很久才一次 validation
-data 部分我不確定有沒有比全部處理成 npy 再 load 還要好的方法，我就單純直接先這樣做了
-但這樣 load data 也是要等一段時間
-
-剩下的程式碼編排部分 我可能沒有用得很好 QQ
-
-inference code 還沒寫XD 我都先看 validation 
-```
 
 ## Training Strategy 
 
